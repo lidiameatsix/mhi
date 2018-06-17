@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="nombre" value="Mad"/>
+  <test name="Default test(failed)">
+    <classes>
+      <class name="meliahotels.meliahotels.TestBuscador">
+        <methods>
+          <include name="cerrar"/>
+          <include name="setup"/>
+          <include name="test_Login" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- meliahotels.meliahotels.TestBuscador -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

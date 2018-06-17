@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Parallel test runs" parallel="tests" thread-count="1">
+
+	<!-- Tests login -->
+
+	<test name="Chrome Test">
+		<parameter name="url" value="https://www.melia.com/" />
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="username" value="deepaltran@yopmail.com" />
+		<parameter name="password" value="altran123" />
+		<classes>
+			<class name="meliahotels.meliahotels.TestLogin" />
+		</classes>
+	</test>
+	<test name="IE Test">
+		<parameter name="url" value="https://www.melia.com/" />
+		<parameter name="browser" value="IE"></parameter>
+		<parameter name="username" value="deepaltran@yopmail.com" />
+		<parameter name="password" value="altran123" />
+		<classes>
+			<class name="meliahotels.meliahotels.TestLogin" />
+		</classes>
+	</test>
+	<test name="Firefox Test">
+		<parameter name="url" value="https://www.melia.com/" />
+		<parameter name="browser" value="firefox"></parameter>
+		<parameter name="username" value="deepaltran@yopmail.com" />
+		<parameter name="password" value="altran123" />
+		<classes>
+			<class name="meliahotels.meliahotels.TestLogin" />
+		</classes>
+	</test>
+
+ 	<test name="Edge Test">
+		<parameter name="url" value="https://www.melia.com/" />
+		<parameter name="browser" value="edge"></parameter>
+		<parameter name="username" value="deepaltran@yopmail.com" />
+		<parameter name="password" value="altran123" />
+		<classes>
+			<class name="meliahotels.meliahotels.TestLogin" />
+		</classes>
+	</test> 
+
+
+	<!-- Tests buscador -->
+
+	<test name="Chrome Test buscador">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="meliahotels.meliahotels.TestBuscador" />
+		</classes>
+	</test>
+
+	<test name="IE Test buscador">
+		<parameter name="browser" value="IE"></parameter>
+		<classes>
+			<class name="meliahotels.meliahotels.TestBuscador" />
+		</classes>
+	</test>
+
+	<test name="Firefox Test buscador">
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class name="meliahotels.meliahotels.TestBuscador" />
+		</classes>
+	</test>
+
+
+
+ 	<test name="Edge Test buscador">
+		<parameter name="browser" value="edge"></parameter>
+		<classes>
+			<class name="meliahotels.meliahotels.TestBuscador" />
+		</classes>
+	</test>
+</suite>

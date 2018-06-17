@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Parallel test runs]" parallel="tests">
+  <test name="IE Test buscador(failed)" parallel="tests">
+    <parameter name="browser" value="IE"/>
+    <classes>
+      <class name="meliahotels.meliahotels.TestBuscador">
+        <methods>
+          <include name="cerrar"/>
+          <include name="setup"/>
+          <include name="test_Login" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- meliahotels.meliahotels.TestBuscador -->
+    </classes>
+  </test> <!-- IE Test buscador(failed) -->
+</suite> <!-- Failed suite [Parallel test runs] -->
